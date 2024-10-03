@@ -10,10 +10,10 @@
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo" href="#">
-        <img src="#" width="33" height="38" alt="Cat Energy логотип">
+        <img src="../raw/images/logo-mobile.svg" width="33" height="38" alt="Cat Energy логотип">
       </a>
       <a href="#">
-        <img src="#" width="101" height="18" alt="Cat Energy текстовый логотип">
+        <img src="../raw/images/text-logo-mobile.svg" width="101" height="18" alt="Cat Energy текстовый логотип">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -39,7 +39,11 @@
       <section class="preview">
         <h1 class="preview-title">Функциональное питание для котов</h1>
         <p class="preview-description">Занялся собой? Займись котом!</p>
-        <img src="#" width="280" height="270" alt="Наш продукт">
+        <picture>
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="../raw/images/cat-food-preview-desktop@1x.png 1x, ../raw/images/cat-food-preview-desktop@2x.png 2x">
+          <source width="709" height="609" type="image/jpeg" media="(min-width: 768px)" srcset="../raw/images/cat-food-preview-tablet@1x.jpg 1x, ../raw/images/cat-food-preview-tablet@2x.jpg 2x">
+          <img src="../raw/images/cat-food-preview-mobile@1x.png" srcset="../raw/images/cat-food-preview-mobile@2x.png 2x" width="280" height="270" alt="Наш продукт">
+        </picture>
         <a class="button preview__select" href="#">подобрать программу</a>
       </section>
       <div class="wrapper">
