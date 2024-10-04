@@ -11,14 +11,17 @@
     <header class="main-header">
       <a class="main-header__logo" href="#">
         <picture>
-          <source type="image/svg+xml" width="202" height="59" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
-          <source type="image/svg+xml" width="174" height="50" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+          <source type="image/svg+xml" width="70" height="59" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+          <source type="image/svg+xml" width="60" height="50" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
           <img src="images/logo-mobile.svg" width="33" height="38" alt="Cat Energy логотип">
         </picture>
       </a>
       <a href="#">
-        <!--  <source type="image/svg+xml" width="101" height="18" media="(max-width: 767px)" srcset="images/text-logo-mobile.svg"> поставил бы, но как лучше скрыть? на таблет и десктоп экранах, через медия стили задать вижуалли хайден? но тогда будет грузиться лишняя пикча для пользователей..  -->
-        <img src="images/text-logo-mobile.svg" width="101" height="18" alt="Cat Energy текстовый логотип">
+        <picture>
+          <source type="image/svg+xml" width="118" height="21" media="(min-width: 1440px)" srcset="images/text-logo-desktop.svg">
+          <source type="image/svg+xml" width="101" height="18" media="(min-width: 768px)" srcset="images/text-logo-tablet.svg">
+          <img src="images/text-logo-mobile.svg" width="101" height="18" alt="Cat Energy текстовый логотип">
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
