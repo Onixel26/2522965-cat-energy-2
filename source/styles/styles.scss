@@ -2,6 +2,24 @@
 @import "./common/variables.scss";
 @import "./common/global.scss";
 @import "./common/fonts.scss";
+@import "./common/visually-hidden.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/page.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/page-main.scss";
+@import "./blocks/preview.scss";
+@import "./blocks/blog-article.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/review.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/social-list.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/main-catalog.scss";
+@import "./blocks/catalog-layout.scss";
+@import "./blocks/sub-product.scss";
+@import "./blocks/promo-gift.scss";
+@import "./blocks/newsletter-catalog.scss";
