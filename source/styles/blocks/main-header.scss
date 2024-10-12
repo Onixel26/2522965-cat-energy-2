@@ -1,1 +1,11 @@
+details summary {
+  list-style: none;
+}
 
+details summary:before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../../icons/mobile-menu-button-open.svg");
+}
