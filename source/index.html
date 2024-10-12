@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <title>Cat Energy</title>
@@ -28,10 +28,14 @@
         </picture>
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
+        <details open class="main-nav__wrapper">
+          <summary>
+            <svg width="20px" height="20px" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path transform="scale(.97098 1.0282) rotate(-45 24.51 7.237)" stroke="#000" stroke-width="1.5" d="M0-.75h24.758"/>
+              <path transform="matrix(.68659 .72705 -.68659 .72705 1 2)" stroke="#000" stroke-width="1.5" d="M0-.75h24.758"/>
+            </svg>
+            <span class="visually-hidden">Открыть меню</span>
+          </summary>
           <ul class="main-nav__list site-list">
             <li class="main-nav__item main-nav__item--current">
               <a class="main-nav__link" href="#">главная</a>
@@ -43,14 +47,16 @@
               <a class="main-nav__link" href="#">Подбор программы</a>
             </li>
           </ul>
-        </div>
+        </details>
       </nav>
     </header>
 
     <main class="page-main">
       <section class="preview">
-        <h1 class="preview-title">Функциональное питание для котов</h1>
-        <p class="preview-description">Занялся собой? Займись котом!</p>
+        <div class="preview-wrapper">
+          <h1 class="preview-title">Функциональное питание для котов</h1>
+          <p class="preview-description">Занялся собой? Займись котом!</p>
+        </div>
         <picture>
           <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/cat-food-preview-desktop@1x.png 1x, images/cat-food-preview-desktop@2x.png 2x">
           <source width="709" height="609" type="image/jpeg" media="(min-width: 768px)" srcset="images/cat-food-preview-tablet@1x.jpg 1x, images/cat-food-preview-tablet@2x.jpg 2x">
