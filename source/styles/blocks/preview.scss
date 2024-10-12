@@ -1,0 +1,44 @@
+.preview__title {
+  @include fonts(36px, 36px, 400);
+  @include margin-text(25px);
+  font-family: "Oswald";
+  text-align: center;
+  color: #ffffff;
+}
+
+.preview__description {
+  @include fonts(14px, 14px, 400);
+  @include margin-text(0);
+  font-family: "Oswald";
+  text-align: center;
+  color: #ffffff;
+}
+
+.preview__wrapper {
+  min-height: 302px;
+  background-color: $base-background-color;
+  padding-top: 27px;
+}
+
+.preview__select {
+  font-family: "Oswald";
+  @include fonts(16px,20px,400);
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $base-background-color;
+  color: #ffffff;
+}
+
+.preview__select-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.preview {
+  margin-bottom: 20px;
+}
+

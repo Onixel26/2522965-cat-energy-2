@@ -1,0 +1,21 @@
+.main-nav__list {
+  @include reset-list;
+}
+
+.main-nav__link {
+  text-transform: uppercase;
+  font-family: "Oswald";
+  @include fonts(20px, 20px, 400);
+}
+
+.main-nav__wrapper summary {
+  list-style: none;
+}
+
+.main-nav__wrapper summary:before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../../icons/mobile-menu-button-open.svg");
+}

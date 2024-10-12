@@ -7,3 +7,21 @@
     font-display: swap;
   }
 }
+
+@mixin fonts($font-size-text, $line-height-text, $font-weight-text) {
+  font-size: $font-size-text;
+  line-height: $line-height-text;
+  font-weight: $font-weight-text;
+}
+
+@mixin reset-list {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+@mixin margin-text ($text-margin-bottom) {
+  margin-top: 0;
+  margin-bottom: $text-margin-bottom;
+}
