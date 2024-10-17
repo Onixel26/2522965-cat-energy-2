@@ -1,0 +1,19 @@
+.advantages__title {
+  font-family: "Oswald";
+  @include fonts(36px, 40px, 400);
+  @include margin-text(40px);
+}
+
+.advantages__description {
+  @include fonts(14px, 18px, 400);
+  @include margin-text(24px);
+}
+
+.advantages__list {
+  @include reset-list;
+  padding-left: 80px;
+}
+
+.advantages {
+  padding: 0px 20px;
+}
