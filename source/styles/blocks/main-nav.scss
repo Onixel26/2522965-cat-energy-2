@@ -4,7 +4,7 @@
 
 .main-nav__link {
   text-transform: uppercase;
-  font-family: "Oswald";
+  font-family: $secondary-font;
   @include fonts(20px, 20px, 400);
 }
 

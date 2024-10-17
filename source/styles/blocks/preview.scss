@@ -1,7 +1,7 @@
 .preview__title {
   @include fonts(36px, 36px, 400);
   @include margin-text(25px);
-  font-family: "Oswald";
+  font-family: $secondary-font;
   text-align: center;
   color: #ffffff;
 }
@@ -9,7 +9,7 @@
 .preview__description {
   @include fonts(14px, 14px, 400);
   @include margin-text(0);
-  font-family: "Oswald";
+  font-family: $secondary-font;
   text-align: center;
   color: #ffffff;
 }
@@ -21,7 +21,7 @@
 }
 
 .preview__select {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   @include fonts(16px,20px,400);
   text-transform: uppercase;
   text-align: center;

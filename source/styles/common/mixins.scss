@@ -25,3 +25,9 @@
   margin-top: 0;
   margin-bottom: $text-margin-bottom;
 }
+
+@mixin background-image ($background-image, $background-repeat, $background-size) {
+  background-image: $background-image;
+  background-repeat: $background-repeat;
+  background-size: $background-size;
+}

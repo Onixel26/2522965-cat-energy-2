@@ -1,19 +1,48 @@
 .advantages__title {
-  font-family: "Oswald";
+  font-family: $secondary-font;
   @include fonts(36px, 40px, 400);
   @include margin-text(40px);
 }
 
 .advantages__description {
   @include fonts(14px, 18px, 400);
-  @include margin-text(24px);
+  @include margin-text(0px);
+  color: $base-color-text;
 }
 
 .advantages__list {
   @include reset-list;
-  padding-left: 80px;
 }
 
 .advantages {
   padding: 0px 20px;
+  margin-bottom: 49px;
+}
+
+.advantages__item {
+  padding-top: 2px;
+  padding-bottom: 4px;
+  min-height: 60px;
+  padding-left: 80px;
+  margin-bottom: 20px;
+}
+
+.advantages__item:last-child {
+  margin-bottom: 0;
+}
+
+.advantages__item:nth-child(1) {
+  @include background-image(url(../../images/advantages-background-1.jpg), no-repeat, 60px 60px);
+}
+
+.advantages__item:nth-child(2) {
+  @include background-image(url(../../images/advantages-background-2.jpg), no-repeat, 60px 60px);
+}
+
+.advantages__item:nth-child(3) {
+  @include background-image(url(../../images/advantages-background-3.jpg), no-repeat, 60px 60px);
+}
+
+.advantages__item:nth-child(4) {
+  @include background-image(url(../../images/advantages-background-4.jpg), no-repeat, 60px 60px);
 }

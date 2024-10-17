@@ -1,7 +1,7 @@
 .blog-article__title {
   @include fonts(24px,37px,400);
   @include margin-text(29px);
-  font-family: "Oswald";
+  font-family: $secondary-font;
   text-transform: uppercase;
 }
 
@@ -14,7 +14,7 @@
 .blog-article__primary {
   @include fonts(16px,16px,400);
   @include margin-text(0);
-  font-family: "Oswald";
+  font-family: $secondary-font;
   text-transform: uppercase;
 }
 
