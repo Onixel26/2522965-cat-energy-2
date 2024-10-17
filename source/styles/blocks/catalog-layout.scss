@@ -50,3 +50,37 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+.catalog-layout__item--additional {
+  @include background-image(url("../../icons/more-cards-icon.svg"), no-repeat, 30px 30px);
+  background-position: top center;
+  padding-top: 53px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.catalog-layout__item-description--additional {
+  @include fonts(12px,16px,400);
+  color: $base-color-text;
+}
+
+.catalog-layout__item-title--additional {
+  @include margin-text (8px);
+}
+
+.catalog-layout__item-description--additional {
+  @include margin-text (21px);
+  color: $base-color-text;
+}
+
+.catalog-layout__item__button-additional {
+  @include fonts(16px,20px,400);
+  font-family: $secondary-font;
+  text-transform: uppercase;
+  color: $base-color-text;
+  display: inline-block;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #F2F2F2;
+}
