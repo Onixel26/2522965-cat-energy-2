@@ -1,0 +1,52 @@
+.catalog-layout__title {
+  @include fonts(36px,36px,400);
+  @include margin-text(0);
+  font-family: $secondary-font;
+  padding: 27px 20px 41px 20px;
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.catalog-layout__list {
+  @include reset-list;
+}
+
+.catalog-layout__item {
+  padding: 20px 20px 25px 20px;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.catalog-layout__item-title {
+  @include fonts(16px,20px,400);
+  @include margin-text(14px);
+  font-family: $secondary-font;
+  text-transform: uppercase;
+}
+
+.catalog-layout__item__description-wrapper {
+  @include fonts(16px,20px,400);
+  @include margin-text(17px);
+  color: $base-color-text;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: grid;
+  grid-template-columns: max-content auto;
+  margin-bottom: 21px;
+}
+
+.catalog-layout__item__description-wrapper dd {
+  margin-left: auto;
+}
+
+.catalog-layout__item__button {
+  @include fonts(16px,20px,400);
+  font-family: $secondary-font;
+  display: inline-block;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $base-background-color;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
