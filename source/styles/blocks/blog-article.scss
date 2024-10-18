@@ -16,7 +16,14 @@
   @include margin-text(0);
   font-family: $secondary-font;
   text-transform: uppercase;
+  position: relative;
 }
+
+.blog-article__primary::after {
+  content: "";
+  position: absolute;
+}
+
 
 .blog-article {
   margin-bottom: 20px;

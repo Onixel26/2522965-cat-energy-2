@@ -23,3 +23,16 @@ a {
   color: #000;
   text-decoration: none;
 }
+
+.button {
+  @include fonts(16px,20px,400);
+  font-family: $secondary-font;
+  display: inline-block;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $base-background-color;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}

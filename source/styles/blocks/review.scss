@@ -15,7 +15,7 @@
   color: $base-color-text;
 }
 
-.review__results__description {
+.review__results-description {
   @include fonts(24px,24px,400);
   @include margin-text(0);
   font-family: $secondary-font;
@@ -29,7 +29,7 @@
   margin-bottom: 20px;
 }
 
-.review__results__title {
+.review__results-title {
   @include fonts(12px,12px,400);
   color: $base-color-text;
 }

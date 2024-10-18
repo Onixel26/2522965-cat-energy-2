@@ -8,7 +8,7 @@
   @include fonts(20px, 20px, 400);
 }
 
-label {
+.main-nav label {
   display: block;
   position: relative;
   width: 24px;
@@ -16,7 +16,7 @@ label {
   background-color: white;
 }
 
-label::before, label::after, label span {
+.main-nav label::before,.main-nav  label::after,.main-nav  label span {
   position: absolute;
   width: 100%;
   height: 2px;
@@ -24,17 +24,17 @@ label::before, label::after, label span {
   transition: .3s;
 }
 
-label::before {
+.main-nav label::before {
   content: "";
   top: 2px;
 }
 
-label::after {
+.main-nav label::after {
   content: "";
   bottom: 4px;
 }
 
-label span {
+.main-nav label span {
   top: 10px;
 }
 
