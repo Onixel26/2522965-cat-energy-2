@@ -11,7 +11,7 @@
   color: $base-color-text;
 }
 
-.blog-article__primary {
+.blog-article__button {
   @include fonts(16px,16px,400);
   @include margin-text(0);
   font-family: $secondary-font;
@@ -19,9 +19,15 @@
   position: relative;
 }
 
-.blog-article__primary::after {
+.blog-article__button::after {
   content: "";
   position: absolute;
+  display: block;
+  width: 32px;
+  height: 10px;
+  background: url("../../icons/blog-icon-arrow.svg");
+  right: -47px;
+  top: 7px;
 }
 
 

@@ -1,12 +1,12 @@
 .review {
-  padding: 25px 20px 20px 20px;
-  background-color: #EAEAEA;
+  padding: 25px 20px 20px;
+  background-color: #eaeaea;
 }
 
 .review__title {
-  font-family: $secondary-font;
   @include fonts(36px, 40px, 400);
   @include margin-text(40px);
+  font-family: $secondary-font;
 }
 
 .review__description {
@@ -37,12 +37,12 @@
 .review__results {
   margin-left: 0;
   margin-right: 0;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #cdcdcd;
 }
 
 .review__amount {
   @include fonts(14px,20px,400);
-  @include margin-text(0px);
+  @include margin-text(0);
   font-family: $secondary-font;
   text-align: center;
   text-transform: uppercase;

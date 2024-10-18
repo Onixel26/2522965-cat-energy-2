@@ -1,12 +1,12 @@
 .advantages__title {
-  font-family: $secondary-font;
-  @include fonts(36px, 40px, 400);
+  @include fonts (36px, 40px, 400);
   @include margin-text(40px);
+  font-family: $secondary-font;
 }
 
 .advantages__description {
   @include fonts(14px, 18px, 400);
-  @include margin-text(0px);
+  @include margin-text(0);
   color: $base-color-text;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .advantages {
-  padding: 0px 20px;
+  padding: 0 20px;
   margin-bottom: 49px;
 }
 
@@ -32,17 +32,17 @@
 }
 
 .advantages__item:nth-child(1) {
-  @include background-image(url(../../images/advantages-background-1.jpg), no-repeat, 60px 60px);
+  @include background-image(url("../../images/advantages-background-1.jpg"), no-repeat, 60px 60px);
 }
 
 .advantages__item:nth-child(2) {
-  @include background-image(url(../../images/advantages-background-2.jpg), no-repeat, 60px 60px);
+  @include background-image(url("../../images/advantages-background-2.jpg"), no-repeat, 60px 60px);
 }
 
 .advantages__item:nth-child(3) {
-  @include background-image(url(../../images/advantages-background-3.jpg), no-repeat, 60px 60px);
+  @include background-image(url("../../images/advantages-background-3.jpg"), no-repeat, 60px 60px);
 }
 
 .advantages__item:nth-child(4) {
-  @include background-image(url(../../images/advantages-background-4.jpg), no-repeat, 60px 60px);
+  @include background-image(url("../../images/advantages-background-4.jpg"), no-repeat, 60px 60px);
 }
