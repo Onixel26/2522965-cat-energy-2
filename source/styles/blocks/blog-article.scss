@@ -1,7 +1,7 @@
 .blog-article__title {
   @include fonts(24px,37px,400);
   @include margin-text(29px);
-  font-family: $secondary-font;
+  font-family: $font-secondary;
   text-transform: uppercase;
 }
 
@@ -10,13 +10,13 @@
   @include margin-text(15);
   color: $base-color-text;
   padding-bottom: 23px;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $border-secondary;
 }
 
 .blog-article__button {
   @include fonts(16px,16px,400);
   @include margin-text(0);
-  font-family: $secondary-font;
+  font-family: $font-secondary;
   text-transform: uppercase;
   position: relative;
 }
@@ -35,7 +35,7 @@
 
 .blog-article {
   margin-bottom: 20px;
-  background-color: #f2f2f2;
+  background-color: $background-color-primary;
   padding: 30px 20px 18px;
 }
 

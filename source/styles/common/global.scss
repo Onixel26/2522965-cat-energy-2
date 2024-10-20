@@ -6,13 +6,13 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  background-color: #ffffff;
+  background-color: $basic-white;
   font-size: 14px;
   line-height: 18px;
   width: 100%;
   position: relative;
   margin: 0;
-  color: #000000;
+  color: $basic-black;
 }
 
 img {
@@ -20,19 +20,19 @@ img {
 }
 
 a {
-  color: #000000;
+  color: $basic-black;
   text-decoration: none;
 }
 
 .button {
   @include fonts(16px,20px,400);
-  font-family: $secondary-font;
+  font-family: $font-secondary;
   display: inline-block;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: $base-background-color;
-  color: #ffffff;
+  color: $basic-white;
   text-transform: uppercase;
   text-align: center;
 }

@@ -1,25 +1,23 @@
 .preview__title {
   @include fonts(36px, 36px, 400);
   @include margin-text(25px);
-  font-family: $secondary-font;
+  font-family: $font-secondary;
   text-align: center;
-  color: #ffffff;
+  color: $basic-white;
 }
 
 .preview__description {
   @include fonts(14px, 14px, 400);
   @include margin-text(0);
-  font-family: $secondary-font;
+  font-family: $font-secondary;
   text-align: center;
-  color: #ffffff;
+  color: $basic-white;
 }
 
 .preview__wrapper {
+  @include background-gradient(url("../../images/preview-background-cat.jpg"));
   min-height: 302px;
   padding-top: 27px;
-  background: linear-gradient(0deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/preview-background-cat.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .preview__select-wrapper {

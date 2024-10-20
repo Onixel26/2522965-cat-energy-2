@@ -3,16 +3,14 @@
 }
 
 .promo-gift-wrapper {
-  background: linear-gradient(0deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/promo-gift-background-cat.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include background-gradient(url("../../images/promo-gift-background-cat.jpg"));
   padding: 187px 61px 43px 58px;
 }
 
 .promo-gift-wrapper p {
   @include fonts(16px,20px,400);
   @include margin-text(0);
-  color: #ffffff;
+  color: $basic-white;
   text-align: center;
   position: relative;
 }

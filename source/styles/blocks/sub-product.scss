@@ -6,26 +6,13 @@
 .sub-product__title {
   @include fonts(24px,24px,400);
   @include margin-text(35px);
-  font-family: $secondary-font;
-}
-
-.sub-product__item {
-  padding: 13px 0 18px;
-  border-bottom: 1px solid #cdcdcd;
-}
-
-.sub-product__item:first-child {
-  border-top: 1px solid #cdcdcd;
-}
-
-.sub-product__list {
-  @include reset-list;
+  font-family: $font-secondary;
 }
 
 .sub-product__item-title {
   @include fonts(16px,16px,400);
   @include margin-text(13px);
-  font-family: $secondary-font;
+  font-family: $font-secondary;
   text-transform: uppercase;
 }
 
@@ -36,6 +23,19 @@
   margin-bottom: 15px;
   display: grid;
   grid-template-columns: max-content auto;
+}
+
+.sub-product__item {
+  padding: 13px 0 18px;
+  border-bottom: 1px solid $border-third;
+}
+
+.sub-product__item:first-child {
+  border-top: 1px solid $border-third;
+}
+
+.sub-product__list {
+  @include reset-list;
 }
 
 .sub-product__item-description dd {

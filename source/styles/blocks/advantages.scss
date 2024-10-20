@@ -1,7 +1,7 @@
 .advantages__title {
   @include fonts (36px, 40px, 400);
   @include margin-text(40px);
-  font-family: $secondary-font;
+  font-family: $font-secondary;
 }
 
 .advantages__description {

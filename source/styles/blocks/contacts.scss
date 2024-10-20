@@ -7,7 +7,7 @@
 .contacts__title {
   @include fonts(16px,20px,400);
   @include margin-text(0);
-  font-family: $secondary-font;
+  font-family: $font-secondary;
   text-transform: uppercase;
   font-style: normal;
 }
@@ -25,5 +25,5 @@
 }
 
 .contacts-wrapper--catalog {
-  background-color: #f2f2f2;
+  background-color: $background-color-primary;
 }
