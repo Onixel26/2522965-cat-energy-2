@@ -37,7 +37,7 @@
   bottom: 4px;
 }
 
-.main-nav label span {
+.decorate-border-center {
   top: 10px;
 }
 
@@ -51,7 +51,7 @@
   top: 12px;
 }
 
-.burger-toggle:checked ~ label span {
+.burger-toggle:checked ~ label .decorate-border-center {
   transform: rotate(-45deg);
   top: 12px;
 }
