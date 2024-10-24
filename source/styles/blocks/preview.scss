@@ -32,28 +32,38 @@
 }
 
 .preview {
-  @media(max-width: 768px) {
-    color: $basic-white;
-    text-align: center;
+  color: $basic-white;
+  text-align: center;
 
+  background: {
+    image: linear-gradient(0deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), /*градиент заливка*/
+            url("../../images/background/background-cat-mobile-test@1x.jpg"), /* мейн пикча */
+            linear-gradient(to right, rgb(81, 82, 86), rgba(66,65,70,1)); /*сейв бэкграунд схожий с фоном картинки кота, чтобы не было резкого перехода */
+    repeat: no-repeat;
+    position: center 0;
+    size: auto 302px;
+  }
+
+  @media (min-resolution: 2dppx) {
     background: {
-      image: url("../../images/background/preview-background-mobile@1x.jpg"), linear-gradient($preview-green, $preview-green 302px, $basic-white 302px);
-      position: 50% 0;
+      image: linear-gradient(0deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+             url("../../images/background/background-cat-mobile-test@2x.jpg"),
+             linear-gradient(to right, rgb(81, 82, 86), rgba(66,65,70,1));
       repeat: no-repeat;
+      position: center 0;
       size: auto 302px;
     }
   }
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../../images/background/preview-background-mobile@2x.jpg"), linear-gradient($preview-green, $preview-green 302px, $basic-white 302px);
-  }
-
   @media (min-width: 768px) {
     background: none;
+    text-align: start;
   }
 
   @media (min-width: 1440px) {
-    position: relative;
+    position: relative; /* Задаю родителя для привязки бэкграунда псевдоэлементом */
+    background: none;
+    text-align: start;
   }
 }
 
@@ -64,19 +74,20 @@
 
   @media (min-width: 768px) {
     position: relative;
-    padding: 65px 87px 526px;
+    padding: 65px 0 526px;
     width: 534px;
   }
 
   @media (min-width: 1440px) {
     position: initial;
-    padding: 81px 726px 185px 80px;
+    padding: 110px 0 184px 190px;
+    margin: 0;
 
     &::after {
       content: "";
       position: absolute;
       width: 50%;
-      top: -400px;
+      top: -114px; /*накрываю бэкграунд на блок навигации и его верхний отступ */
       right: 0;
       bottom: 0;
       z-index: -2;
@@ -87,7 +98,7 @@
 
       @media (min-resolution: 2dppx) {
         background-image: url("../../images/background/preview-background-desktop@2x.jpg");
-        background-size: auto 690px;
+        background-size: auto 694px;
       }
     }
   }
