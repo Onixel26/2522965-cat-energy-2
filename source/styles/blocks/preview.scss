@@ -46,9 +46,9 @@
     position: center 0;
     size: auto 302px;
   }
-
   color: $basic-white;
   text-align: center;
+  margin-bottom: 20px;
 
   @media (min-resolution: 2dppx) {
     @include background-gradient-green(url("../../images/background/preview-background-mobile@2x.jpg"));
@@ -61,12 +61,14 @@
   @media (min-width: 768px) {
     background: none;
     text-align: start;
+    margin-bottom: 0;
   }
 
   @media (min-width: 1440px) {
     position: relative; /* Задаю родителя для привязки бэкграунда псевдоэлементом */
     background: none;
     text-align: start;
+    margin-bottom: 82px;
   }
 }
 
