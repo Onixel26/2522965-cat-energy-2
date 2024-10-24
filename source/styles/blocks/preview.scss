@@ -9,6 +9,12 @@
     @include fonts(60px,60px,400);
     margin-bottom: 40px;
     color: $basic-black;
+    max-width: 425px;
+    margin-left: 90px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-left: 0;
   }
 }
 
@@ -24,10 +30,13 @@
     @include fonts(20px,20px,400);
     margin-bottom: 50px;
     color: $basic-black;
+    max-width: 425px;
+    margin-left: 90px;
   }
 
   @media (min-width: 1440px) {
     margin-bottom: 52px;
+    margin-left: 0;
   }
 }
 
@@ -63,17 +72,17 @@
 
 .preview__wrapper {
   padding-top: 27px;
-  width: 280px;
+  width: $width-mobile-content;
   margin: 0 auto;
 
   @media (min-width: 768px) {
     position: relative;
     padding: 65px 0 526px;
-    width: 534px;
+    width: $width-tablet-content;
   }
 
   @media (min-width: 1440px) {
-    position: initial;
+    position: initial; /* Отдаю родительство предыдущему блоку */
     padding: 110px 0 184px 190px;
     margin: 0;
 
@@ -124,5 +133,12 @@
     @include fonts(20px,26px,400);
     width: auto;
     padding: 14px 26px;
+    box-sizing: border-box;
+    max-width: 425px;
+    margin-left: 90px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-left: 0;
   }
 }

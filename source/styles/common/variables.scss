@@ -13,3 +13,25 @@ $preview-green: #64a73d;
 /* шрифты */
 $font-secondary: "Oswald", sans-serif;
 
+/*Мейн брейкпоинты макета */
+$width-mobile: 320px;
+$width-tablet: 768px;
+$width-desktop: 1440px;
+
+/* Отступы от края вьюпорта */
+$width-mobile-padding: 20px;
+$width-tablet-padding: 30px;
+$width-desktop-padding: 110px;
+
+/* Размеры контент блока, созданные для резины сайта */
+$width-mobile-content: (
+  $width-mobile - 2 * $width-mobile-padding
+);
+
+$width-tablet-content: (
+  $width-tablet - 2 * $width-tablet-padding
+);
+
+$width-desktop-content: (
+  $width-desktop - 2 * $width-desktop-padding
+);
