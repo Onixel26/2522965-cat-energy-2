@@ -41,7 +41,7 @@
 }
 
 .preview {
-  @include background-gradient-green(url("../../images/background/preview-background-mobile@1x.jpg"));
+  @include background-gradient-green(url("../../images/background/preview/preview-background-mobile@1x.jpg"));
   background: {
     position: center 0;
     size: auto 302px;
@@ -51,7 +51,7 @@
   margin-bottom: 20px;
 
   @media (min-resolution: 2dppx) {
-    @include background-gradient-green(url("../../images/background/preview-background-mobile@2x.jpg"));
+    @include background-gradient-green(url("../../images/background/preview/preview-background-mobile@2x.jpg"));
     background: {
       position: center 0;
       size: auto 302px;
@@ -89,7 +89,7 @@
     margin: 0;
 
     &::after {
-      @include background-gradient-green(url("../../images/background/preview-background-desktop@1x.jpg"));
+      @include background-gradient-green(url("../../images/background/preview/preview-background-desktop@1x.jpg"));
       background-position: 0 100%;
       content: "";
       position: absolute;
@@ -100,7 +100,7 @@
       z-index: -2;
 
       @media (min-resolution: 2dppx) {
-        @include background-gradient-green(url("../../images/background/preview-background-desktop@2x.jpg"));
+        @include background-gradient-green(url("../../images/background/preview/preview-background-desktop@2x.jpg"));
         background: {
           position: 0 100%;
           size: auto 694px;

@@ -34,7 +34,7 @@
   background: {
     image: linear-gradient(0deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
            $background-gradient-image,
-           linear-gradient(to right, rgb(81, 82, 86), rgba(66,65,70,1));
+           linear-gradient(to right, rgba(81, 82, 86, 1), rgba(66,65,70,1));
     repeat: no-repeat;
   }
 }
