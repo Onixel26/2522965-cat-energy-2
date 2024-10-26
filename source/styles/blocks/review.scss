@@ -1,9 +1,7 @@
 .review {
-  padding: 25px 20px 40px;
   background: $background-color-secondary;
 
-  @media (min-width: 768px) {
-    padding: 0 30px 101px;
+  @media (min-width: $width-tablet) {
     background: $basic-white;
     position: relative; /*родитель для бэкграунд цвета */
     z-index: -1;
@@ -19,6 +17,26 @@
       z-index: -2;
     }
   }
+
+  @media (min-width: $width-desktop) {
+  }
+}
+
+.review-container {
+  padding: 25px 20px 40px;
+  width: $width-mobile-content;
+  margin: 0 auto;
+
+  @media (min-width: $width-tablet) {
+    width: $width-tablet-content;
+    padding: 0 30px 101px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: $width-desktop-content;
+    padding: 0 110px 75px;
+    position: relative; /* Для позиционирования слайдера */
+  }
 }
 
 .review__title {
@@ -26,9 +44,14 @@
   @include margin-text(40px);
   font-family: $font-secondary;
 
-  @media(min-width: 768px) {
+  @media(min-width: $width-tablet) {
     @include fonts(60px,60px,400);
     margin-bottom: 60px;
+  }
+
+  @media(min-width: $width-desktop) {
+    margin-bottom: 146px;
+    max-width: 436px;
   }
 }
 
@@ -37,9 +60,14 @@
   @include margin-text(20px);
   color: $base-color-text;
 
-  @media(min-width: 768px) {
+  @media(min-width: $width-tablet) {
     @include fonts(16px,24px,400);
     margin-bottom: 55px;
+  }
+
+  @media(min-width: $width-desktop) {
+    max-width: 436px;
+    margin-bottom: 69px;
   }
 }
 
@@ -51,7 +79,7 @@
   padding-top: 14px;
   padding-bottom: 8px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $width-tablet) {
     @include fonts(30px,37px,400);
     padding-top: 15px;
     padding-bottom: 11px;
@@ -64,9 +92,17 @@
   gap: 32px;
   margin-bottom: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $width-tablet) {
     grid-template-columns: 162px 162px 1fr;
     margin-bottom: 99px;
+    gap: 43px;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-template-columns: 162px 162px;
+    margin-bottom: 0;
+    column-gap: 42px;
+    row-gap: 55px;
   }
 }
 
@@ -77,7 +113,7 @@
   padding: 0 15px;
   max-width: 58px;
 
-  @media (min-width: 768px){
+  @media (min-width: $width-tablet){
     @include fonts(14px,14px,400);
     max-width: 100%;
   }
@@ -107,13 +143,27 @@
   grid-column-start: 1;
   grid-column-end: 3;
 
-  @media (min-width: 768px) {
-    padding-top: 11px;
+  @media (min-width: $width-tablet) {
     @include fonts(20px,20px,400);
+    padding-top: 11px;
     grid-column-start: 3;
     grid-column-end: 4;
     max-width: 174px;
     text-align: right;
     margin-left: auto;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    max-width: none;
+    text-align: left;
+    margin-left: 0;
+  }
+}
+
+.review__amount span {
+  @media (min-width: $width-desktop) {
+    margin-left: 63px;
   }
 }

@@ -3,9 +3,8 @@
   @include margin-text(25px);
   font-family: $font-secondary;
   color: $basic-white;
-  word-break: break-word;
 
-  @media (min-width: 768px) {
+  @media (min-width: $width-tablet) {
     @include fonts(60px,60px,400);
     margin-bottom: 40px;
     color: $basic-black;
@@ -13,8 +12,8 @@
     margin-left: 90px;
   }
 
-  @media (min-width: 1440px) {
-    margin-left: 0;
+  @media (min-width: $width-desktop) {
+    margin-left: 80px;
   }
 }
 
@@ -26,7 +25,7 @@
   text-transform: uppercase;
   word-break: break-word;
 
-  @media (min-width: 768px) {
+  @media (min-width: $width-tablet) {
     @include fonts(20px,20px,400);
     margin-bottom: 50px;
     color: $basic-black;
@@ -34,9 +33,9 @@
     margin-left: 90px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $width-desktop) {
     margin-bottom: 52px;
-    margin-left: 0;
+    margin-left: 80px;
   }
 }
 
@@ -46,6 +45,7 @@
     position: center 0;
     size: auto 302px;
   }
+
   color: $basic-white;
   text-align: center;
   margin-bottom: 20px;
@@ -58,13 +58,13 @@
   }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $width-tablet) {
     background: none;
     text-align: start;
     margin-bottom: 0;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $width-desktop) {
     position: relative; /* Задаю родителя для привязки бэкграунда псевдоэлементом */
     background: none;
     text-align: start;
@@ -77,43 +77,22 @@
   width: $width-mobile-content;
   margin: 0 auto;
 
-  @media (min-width: 768px) {
+  @media (min-width: $width-tablet) {
     position: relative;
     padding: 65px 0 526px;
     width: $width-tablet-content;
   }
 
-  @media (min-width: 1440px) {
-    position: initial; /* Отдаю родительство предыдущему блоку */
-    padding: 110px 0 184px 190px;
-    margin: 0;
-
-    &::after {
-      @include background-gradient-green(url("../../images/background/preview/preview-background-desktop@1x.jpg"));
-      background-position: 0 100%;
-      content: "";
-      position: absolute;
-      width: 50%;
-      top: -114px; /*накрываю бэкграунд на блок навигации и его верхний отступ */
-      right: 0;
-      bottom: 0;
-      z-index: -2;
-
-      @media (min-resolution: 2dppx) {
-        @include background-gradient-green(url("../../images/background/preview/preview-background-desktop@2x.jpg"));
-        background: {
-          position: 0 100%;
-          size: auto 694px;
-        }
-      }
-    }
+  @media (min-width: $width-desktop) {
+    padding: 110px 0 184px;
+    width: $width-desktop-content;
   }
 }
 
 .preview__image {
   margin: 0 auto;
 
-  @media (min-width: 768px) {
+  @media (min-width: $width-tablet) {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -122,7 +101,7 @@
     z-index: -1;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $width-desktop) {
     top: 29px;
     left: calc(50% - 162px);
     width: 552px;
@@ -131,7 +110,7 @@
 }
 
 .preview__select {
-  @media (min-width: 768px) {
+  @media (min-width: $width-tablet) {
     @include fonts(20px,26px,400);
     width: auto;
     padding: 14px 26px;
@@ -140,7 +119,7 @@
     margin-left: 90px;
   }
 
-  @media (min-width: 1440px) {
-    margin-left: 0;
+  @media (min-width: $width-desktop) {
+    margin-left: 80px;
   }
 }

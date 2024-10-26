@@ -3,7 +3,7 @@
   @include margin-text(40px);
   font-family: $font-secondary;
 
-  @media (min-width: 768px) {
+  @media (min-width: $width-tablet) {
     @include fonts(60px,60px,400);
     margin-bottom: 72px;
   }
@@ -14,7 +14,7 @@
   @include margin-text(0);
   color: $base-color-text;
 
-  @media (min-width: 768px) {
+  @media (min-width: $width-tablet) {
     @include fonts(16px,24px,400);
   }
 }
@@ -22,35 +22,36 @@
 .advantages__list {
   @include reset-list;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax($width-mobile-content, 1fr));
+  grid-template-columns: 1fr;
   grid-auto-rows: minmax(60px, 1fr);
   gap: 20px;
   margin: 0 auto;
 
-  @media (min-width: 768px) {
+  @media (min-width: $width-tablet) {
     grid-template-columns: repeat(auto-fit, 245px);
     column-gap: 138px;
     row-gap: 77px;
-    justify-content: center;
   }
 
-  @media(min-width: 1440px) {
+  @media(min-width: $width-desktop) {
     gap: 79px;
-    justify-content: space-between;
   }
 }
 
 .advantages {
   padding: 0 20px;
-  margin-bottom: 49px;
+  width: $width-mobile-content;
+  margin: 0 auto 49px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $width-tablet) {
+    width: $width-tablet-content;
     padding: 0 30px 47px;
     margin-bottom: 45px;
     border-bottom: 1px solid $border-primary;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $width-desktop) {
+    width: $width-desktop-content;
     padding: 0 110px 0;
     border: none;
     margin-bottom: 69px;
@@ -60,7 +61,7 @@
 .advantages__item {
   padding: 2px 0 4px 80px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $width-tablet) {
     padding: 111px 0 57px 0;
     background-size: 80px 80px;
   }
@@ -71,7 +72,7 @@
 }
 
 $advantages__item-count: 4;
-/*Вопрос наставнику: не лучше ли их оформить как свг иконки? заэкспортив с зеленым фоном. Без зеленого нереально с таким подходом реализовать после */
+
 @for $i from 1 through $advantages__item-count {
   .advantages__item:nth-child(#{$i}) {
     @include background-image(url("../../images/background/advantages/advantages-background-mobile-#{$i}@1x.jpg"), no-repeat, 60px 60px);
