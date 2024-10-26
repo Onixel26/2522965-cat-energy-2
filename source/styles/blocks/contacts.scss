@@ -1,7 +1,24 @@
 .contacts-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, calc($width-mobile-content / 2));
   padding: 26px 20px;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $width-tablet) {
+    grid-template-columns: 163px 163px;
+    padding: 61px 70px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 565px;
+    box-sizing: border-box;
+    padding: 60px 78px 60px 80px;
+    position: absolute; /*размещаю внутри карты */
+    top: 95px;
+    left: 110px;
+    background-color: $basic-white;
+  }
 }
 
 .contacts__title {
@@ -10,20 +27,39 @@
   font-family: $font-secondary;
   text-transform: uppercase;
   font-style: normal;
+
+  @media (min-width: $width-tablet) {
+    @include fonts(20px,26px,400);
+  }
 }
 
 .contacts__description {
   @include fonts(14px,20px,400);
   @include margin-text(0);
   font-style: normal;
+
+  @media (min-width: $width-tablet) {
+    @include fonts(16px,20px,400);
+    text-align: right;
+  }
 }
 
 .contacts__map-wrapper {
   @include background-image (url("../../images/background-map-save.jpg"), no-repeat, cover);
-  min-height: 362px;
-  min-width: 320px;
+  height: 362px;
+  width: 100%;
+
+  @media (min-width: $width-tablet) {
+    height: 400px;
+  }
 }
 
 .contacts-wrapper--catalog {
   background-color: $background-color-primary;
+}
+
+.contacts {
+  @media (min-width: $width-desktop) {
+    position: relative; /*создаю родителя для позиционирования адреса на самой карте */
+  }
 }
