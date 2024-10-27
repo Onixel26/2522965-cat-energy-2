@@ -2,18 +2,63 @@
   @include fonts(36px,36px,400);
   @include margin-text(0);
   font-family: $font-secondary;
-  padding: 27px 20px 41px;
-  border-top: 1px solid $border-secondary;
-  border-bottom: 1px solid $border-secondary;
+  width: $width-mobile-content;
+  margin: 0 auto 41px;
+
+  @media (min-width: $width-tablet) {
+    @include fonts(60px,60px,400);
+    border: none;
+    margin-bottom: 165px;
+    width: $width-tablet-content;
+  }
+
+  @media (min-width: 1152px) {
+    width: calc(1152px - 2 * $width-tablet-padding);
+  }
+
+  @media (min-width: $width-desktop) {
+    width: $width-desktop-content;
+  }
 }
 
 .catalog-layout__list {
   @include reset-list;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, $width-mobile);
+  justify-content: center;
+  border-bottom: 1px solid $border-fourth;
+  border-top: 1px solid $border-fourth;
+
+  @media (min-width: $width-tablet) {
+    grid-template-columns: repeat(auto-fit, 324px);
+    column-gap: 60px;
+    row-gap: 141px;
+    padding: 0 30px;
+    border: none;
+  }
 }
 
 .catalog-layout__item {
   padding: 20px 20px 24px;
-  border-bottom: 1px solid $border-secondary;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $border-fourth;
+  }
+
+  @media (min-width: 560px) { /*убираю лишний предпоследний бордер при переключении разметки */
+    &:nth-last-child(2) {
+      border: none;
+    }
+  }
+
+  @media (min-width: $width-tablet) {
+    background-color: $background-color-primary;
+    border: none;
+    grid-template-columns: 1fr;
+    padding: 0 37px 40px;
+  }
 }
 
 .catalog-layout__item-title {
@@ -21,38 +66,71 @@
   @include margin-text(14px);
   font-family: $font-secondary;
   text-transform: uppercase;
+  max-width: 76px;
+  color: $base-title-color-text;
+
+  @media (min-width: $width-tablet) {
+    @include fonts(20px,24px,400);
+    max-width: 135px;
+    text-align: center;
+    margin: 0 auto 20px;
+  }
 }
 
-.catalog-layout__item-description-wrapper {
-  @include fonts(16px,20px,400);
-  @include margin-text(17px);
+.catalog-layout__item-description {
+  @include fonts(12px,16px,400);
   color: $base-color-text;
   margin-top: 0;
-  display: grid;
-  grid-template-columns: max-content auto;
   margin-bottom: 21px;
+
+  @media (min-width: $width-tablet) {
+    @include fonts(16px,20px,400);
+  }
 }
 
-.catalog-layout__item-description-wrapper dd {
+.catalog-layout__item-description dd {
   margin-left: auto;
+  text-align: right;
+
+  @media(min-width: $width-tablet) {
+    padding-bottom: 4px;
+    border-bottom: 1px solid $border-third;
+    margin-bottom: 7px;
+
+    &:last-child {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.catalog-layout__item-description dt {
+  float: left;
+  clear: both;
 }
 
 .catalog-layout__item--additional {
   @include background-image(url("../../icons/more-cards-icon.svg"), no-repeat, 30px 30px);
-  background-position: top center;
-  padding-top: 53px;
-  margin-top: 25px;
+  background-position: top 25px center;
+  padding-top: 78px;
   text-align: center;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $width-tablet) {
+    background-size: 60px 60px;
+    background-position: top 50px center;
+  }
 }
 
 .catalog-layout__item-description--additional {
   @include fonts(12px,16px,400);
   @include margin-text (21px);
   color: $base-color-text;
+  display: inline;
 }
 
 .catalog-layout__item-title--additional {
   @include margin-text (8px);
+  max-width: 100%;
 }
 
 .catalog-layout__item-button-additional {
@@ -62,4 +140,27 @@
 
 .catalog-layout {
   margin-bottom: 25px;
+}
+
+.catalog-layout__item-image-wrapper {
+  width: 140px;
+  height: 107px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $width-tablet) {
+    width: 200px;
+    height: 210px;
+    margin: -71px auto 0;
+  }
+}
+
+.catalog-layout__item-button {
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  @media (min-width: $width-tablet) {
+    grid-column-end: 2;
+  }
 }

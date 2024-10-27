@@ -130,3 +130,9 @@
     margin-left: auto;
   }
 }
+
+.main-nav__link--catalog {
+  @media (min-width: $width-desktop) {
+    color: $basic-black;
+  }
+}

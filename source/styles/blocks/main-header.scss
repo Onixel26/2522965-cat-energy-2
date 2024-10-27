@@ -8,6 +8,7 @@
   @media (min-width: $width-tablet) {
     justify-content: flex-start;
     padding: 25px 34px 0 30px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: $width-desktop) {
@@ -34,5 +35,25 @@
 
   @media (min-width: $width-desktop) {
     margin-right: 14px;
+  }
+}
+
+.main-header--catalog {
+
+  @media (min-width: $width-mobile) {
+    margin-bottom: 27px;
+    border-bottom: 1px solid $border-secondary;
+  }
+
+  @media (min-width: $width-tablet) {
+    border: none;
+  }
+
+  @media (min-width: $width-desktop) {
+
+    &::before {
+      height: 0;
+      width: 0;
+    }
   }
 }
