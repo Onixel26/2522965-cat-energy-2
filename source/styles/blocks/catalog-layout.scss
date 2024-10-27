@@ -109,15 +109,15 @@
 }
 
 .catalog-layout__item--additional {
-  @include background-image(url("../../icons/more-cards-icon.svg"), no-repeat, 30px 30px);
-  background-position: top 25px center;
   padding-top: 78px;
   text-align: center;
   grid-template-columns: 1fr;
 
   @media (min-width: $width-tablet) {
-    background-size: 60px 60px;
-    background-position: top 50px center;
+    background: none;
+    padding-top: 158px;
+    border: 2px solid $background-color-primary;
+    padding-bottom: 38px;
   }
 }
 
@@ -126,11 +126,44 @@
   @include margin-text (21px);
   color: $base-color-text;
   display: inline;
+
+  @media (min-width: $width-tablet) {
+    @include fonts(16px, 18px,400);
+    margin-bottom: 82px;
+  }
 }
 
 .catalog-layout__item-title--additional {
   @include margin-text (8px);
   max-width: 100%;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+    left: 50%;
+    transform: translate(-50%);
+    top: -39px;
+  }
+
+  &::after {
+    transform: translate(-50%) rotate(90deg);
+  }
+
+  @media (min-width: $width-tablet) {
+    max-width: 170px;
+    margin-bottom: 23px;
+
+    &::before,
+    &::after {
+      top: -80px;
+    }
+  }
 }
 
 .catalog-layout__item-button-additional {
