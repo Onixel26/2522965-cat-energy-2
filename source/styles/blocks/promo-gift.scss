@@ -7,7 +7,7 @@
 }
 
 .promo-gift-wrapper p {
-  @include fonts(16px,20px,400);
+  @include fonts(16px,20px);
   @include margin-text(0);
   color: $basic-white;
   text-align: center;

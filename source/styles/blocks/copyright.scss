@@ -12,7 +12,7 @@
 }
 
 .copyright__title {
-  @include fonts(16px,20px,400);
+  @include fonts(16px,20px);
   @include margin-text(0);
   color: $base-color-text;
   white-space: nowrap;

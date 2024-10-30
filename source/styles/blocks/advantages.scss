@@ -1,21 +1,21 @@
 .advantages__title {
-  @include fonts (36px, 40px, 400);
+  @include fonts (36px,40px);
   @include margin-text(40px);
   font-family: $font-secondary;
 
   @media (min-width: $width-tablet) {
-    @include fonts(60px,60px,400);
+    @include fonts(60px,60px);
     margin-bottom: 72px;
   }
 }
 
 .advantages__description {
-  @include fonts(14px, 18px, 400);
+  @include fonts(14px,18px);
   @include margin-text(0);
   color: $base-color-text;
 
   @media (min-width: $width-tablet) {
-    @include fonts(16px,24px,400);
+    @include fonts(16px,24px);
   }
 }
 

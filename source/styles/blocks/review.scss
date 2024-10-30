@@ -40,12 +40,12 @@
 }
 
 .review__title {
-  @include fonts(36px, 40px, 400);
+  @include fonts(36px, 40px);
   @include margin-text(40px);
   font-family: $font-secondary;
 
   @media(min-width: $width-tablet) {
-    @include fonts(60px,60px,400);
+    @include fonts(60px,60px);
     margin-bottom: 60px;
   }
 
@@ -56,12 +56,12 @@
 }
 
 .review__description {
-  @include fonts(14px,18px,400);
+  @include fonts(14px,18px);
   @include margin-text(20px);
   color: $base-color-text;
 
   @media(min-width: $width-tablet) {
-    @include fonts(16px,24px,400);
+    @include fonts(16px,24px);
     margin-bottom: 55px;
   }
 
@@ -72,7 +72,7 @@
 }
 
 .review__results-description {
-  @include fonts(24px,24px,400);
+  @include fonts(24px,24px);
   @include margin-text(0);
   font-family: $font-secondary;
   text-transform: uppercase;
@@ -80,7 +80,7 @@
   padding-bottom: 8px;
 
   @media (min-width: $width-tablet) {
-    @include fonts(30px,37px,400);
+    @include fonts(30px,37px);
     padding-top: 15px;
     padding-bottom: 11px;
   }
@@ -107,14 +107,14 @@
 }
 
 .review__results-title {
-  @include fonts(12px,12px,400);
+  @include fonts(12px,12px);
   color: $base-color-text;
   margin: 0 auto;
   padding: 0 15px;
   max-width: 58px;
 
   @media (min-width: $width-tablet){
-    @include fonts(14px,14px,400);
+    @include fonts(14px,14px);
     max-width: 100%;
   }
 }
@@ -135,7 +135,7 @@
 }
 
 .review__amount {
-  @include fonts(14px,20px,400);
+  @include fonts(14px,20px);
   @include margin-text(0);
   font-family: $font-secondary;
   text-align: center;
@@ -144,7 +144,7 @@
   grid-column-end: 3;
 
   @media (min-width: $width-tablet) {
-    @include fonts(20px,20px,400);
+    @include fonts(20px,20px);
     padding-top: 11px;
     grid-column-start: 3;
     grid-column-end: 4;

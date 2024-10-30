@@ -1,5 +1,5 @@
 .main-nav__link {
-  @include fonts(20px, 20px, 400);
+  @include fonts(20px, 20px);
   text-transform: uppercase;
   font-family: $font-secondary;
   display: inline-block;
@@ -9,7 +9,7 @@
   width: 100%;
 
   @media (min-width: $width-tablet) {
-    @include fonts(18px,24px,400);
+    @include fonts(18px,24px);
     border-bottom: none;
     white-space: nowrap;
     padding-top: 0px;
@@ -17,7 +17,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    @include fonts(20px,30px,400);
+    @include fonts(20px,30px);
     padding-bottom: 10px;
     color: $basic-white;
   }

@@ -10,6 +10,7 @@ body {
   background-color: $basic-white;
   font-size: 14px;
   line-height: 18px;
+  font-weight: 400;
   width: 100%;
   position: relative;
   margin: 0;
@@ -26,7 +27,7 @@ a {
 }
 
 .button {
-  @include fonts(16px,20px,400);
+  @include fonts(16px,20px);
   font-family: $font-secondary;
   display: inline-block;
   width: 100%;

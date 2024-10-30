@@ -22,24 +22,24 @@
 }
 
 .contacts__title {
-  @include fonts(16px,20px,400);
+  @include fonts(16px,20px);
   @include margin-text(0);
   font-family: $font-secondary;
   text-transform: uppercase;
   font-style: normal;
 
   @media (min-width: $width-tablet) {
-    @include fonts(20px,26px,400);
+    @include fonts(20px,26px);
   }
 }
 
 .contacts__description {
-  @include fonts(14px,20px,400);
+  @include fonts(14px,20px);
   @include margin-text(0);
   font-style: normal;
 
   @media (min-width: $width-tablet) {
-    @include fonts(16px,20px,400);
+    @include fonts(16px,20px);
     text-align: right;
   }
 }

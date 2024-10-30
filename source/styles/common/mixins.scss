@@ -10,10 +10,9 @@
   }
 }
 
-@mixin fonts($font-size-text, $line-height-text, $font-weight-text) {
+@mixin fonts($font-size-text, $line-height-text) {
   font-size: $font-size-text;
   line-height: $line-height-text;
-  font-weight: $font-weight-text;
 }
 
 /* классическое подключение бэкграунд изображения */

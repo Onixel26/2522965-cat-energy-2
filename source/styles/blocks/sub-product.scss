@@ -4,20 +4,24 @@
 }
 
 .sub-product__title {
-  @include fonts(24px,24px,400);
+  @include fonts(24px,24px);
   @include margin-text(35px);
   font-family: $font-secondary;
+
+  @media (min-width: $width-tablet) {
+    @include fonts(32px,32px);
+  }
 }
 
 .sub-product__item-title {
-  @include fonts(16px,16px,400);
+  @include fonts(16px,16px);
   @include margin-text(13px);
   font-family: $font-secondary;
   text-transform: uppercase;
 }
 
 .sub-product__item-description {
-  @include fonts(14px,14px,400);
+  @include fonts(14px,14px);
   @include margin-text(15px);
   margin-top: 0;
   margin-bottom: 15px;

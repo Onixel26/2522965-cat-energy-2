@@ -3,20 +3,20 @@
 }
 
 .newsletter-catalog__title {
-  @include fonts(24px,24px,400);
+  @include fonts(24px,24px);
   @include margin-text(32px);
   font-family: $font-secondary;
 }
 
 .newsletter-catalog__description {
-  @include fonts(16px,24px,400);
+  @include fonts(16px,24px);
   @include margin-text(24px);
   font-family: $font-secondary;
   text-align: center;
 }
 
 .newsletter-catalog__input {
-  @include fonts(20px,30px,400);
+  @include fonts(20px,30px);
   font-family: $font-secondary;
   color: $base-color-text;
   width: 100%;
