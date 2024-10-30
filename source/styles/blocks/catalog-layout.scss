@@ -36,6 +36,13 @@
     padding: 0 30px;
     border: none;
   }
+
+  @media (min-width: $width-desktop) {
+    grid-template-columns: repeat(4, 245px);
+    padding: 0 110px;
+    column-gap: 80px;
+    row-gap: 144px;
+  }
 }
 
 .catalog-layout__item {
@@ -75,6 +82,10 @@
     text-align: center;
     margin: 0 auto 20px;
   }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 23.4px;
+  }
 }
 
 .catalog-layout__item-description {
@@ -85,6 +96,10 @@
 
   @media (min-width: $width-tablet) {
     @include fonts(16px,20px,400);
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $width-desktop) {
   }
 }
 
@@ -96,10 +111,6 @@
     padding-bottom: 4px;
     border-bottom: 1px solid $border-third;
     margin-bottom: 7px;
-
-    &:last-child {
-      margin-bottom: 32px;
-    }
   }
 }
 
@@ -119,6 +130,10 @@
     border: 2px solid $background-color-primary;
     padding-bottom: 38px;
   }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 148px;
+  }
 }
 
 .catalog-layout__item-description--additional {
@@ -131,6 +146,10 @@
     @include fonts(16px, 18px,400);
     margin-bottom: 82px;
   }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 90px;
+  }
 }
 
 .catalog-layout__item-title--additional {
@@ -138,7 +157,7 @@
   max-width: 100%;
   position: relative;
 
-  &::before,
+  &::before, /*плюсик над текстом*/
   &::after {
     content: "";
     position: absolute;
@@ -162,6 +181,16 @@
     &::before,
     &::after {
       top: -80px;
+      width: 60px;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 26px;
+
+    &::before,
+    &::after {
+      top: -70px;
     }
   }
 }
@@ -185,7 +214,13 @@
   @media (min-width: $width-tablet) {
     width: 200px;
     height: 210px;
-    margin: -71px auto 0;
+    margin: -71px auto 22px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 169px;
+    height: 210px;
+    margin-bottom: 12px;
   }
 }
 
