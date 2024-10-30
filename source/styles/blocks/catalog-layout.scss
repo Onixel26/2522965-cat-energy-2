@@ -202,6 +202,10 @@
 
 .catalog-layout {
   margin-bottom: 25px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 74px;
+  }
 }
 
 .catalog-layout__item-image-wrapper {
