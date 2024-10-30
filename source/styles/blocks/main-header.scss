@@ -47,9 +47,11 @@
 
   @media (min-width: $width-tablet) {
     border: none;
+    margin-bottom: 65px;
   }
 
   @media (min-width: $width-desktop) {
+    margin-bottom: 74px;
 
     &::before {
       height: 0;
