@@ -26,6 +26,11 @@ a {
   text-decoration: none;
 }
 
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .button {
   @include fonts(16px,20px);
   font-family: $font-secondary;
