@@ -1,10 +1,10 @@
 .blog-article__title {
   @include fonts(24px,37px);
-  @include margin-text(0px);
+  @include margin-text(0);
   font-family: $font-secondary;
   text-transform: uppercase;
 
-  @media(min-width: $width-tablet) {
+  @media (min-width: $width-tablet) {
     @include fonts(36px,36px);
   }
 }
@@ -62,7 +62,7 @@
   padding: 24px 20px 18px;
 
   @media (min-width: $width-tablet) {
-    position: relative; /*позиционирование хедер пикчи артикля внутри блока */
+    position: relative; /* позиционирование хедер пикчи артикля внутри блока */
     padding: 77px 316px 53px 52px;
   }
 

@@ -12,7 +12,7 @@
     @include fonts(18px,24px);
     border-bottom: none;
     white-space: nowrap;
-    padding-top: 0px;
+    padding-top: 0;
     padding-bottom: 12px;
   }
 
@@ -38,7 +38,7 @@
   height: 24px;
   background-color: $basic-white;
 
-  @media(min-width: $width-tablet ) {
+  @media (min-width: $width-tablet) {
     display: none;
   }
 }
@@ -105,8 +105,8 @@
 
   @media (min-width: $width-tablet) {
     position: static;
-    top: 0px;
-    transform: scale(1,1);
+    top: 0;
+    transform: scale(1, 1);
     flex-direction: row;
     gap: 33px;
   }

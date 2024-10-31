@@ -3,7 +3,7 @@
 
   @media (min-width: $width-tablet) {
     background: $basic-white;
-    position: relative; /*родитель для бэкграунд цвета */
+    position: relative; /* родитель для бэкграунд цвета */
     z-index: -1;
 
     &::after {
@@ -16,9 +16,6 @@
       height: 462px;
       z-index: -2;
     }
-  }
-
-  @media (min-width: $width-desktop) {
   }
 }
 
@@ -44,12 +41,12 @@
   @include margin-text(40px);
   font-family: $font-secondary;
 
-  @media(min-width: $width-tablet) {
+  @media (min-width: $width-tablet) {
     @include fonts(60px,60px);
     margin-bottom: 60px;
   }
 
-  @media(min-width: $width-desktop) {
+  @media (min-width: $width-desktop) {
     margin-bottom: 146px;
     max-width: 436px;
   }
@@ -60,12 +57,12 @@
   @include margin-text(20px);
   color: $base-color-text;
 
-  @media(min-width: $width-tablet) {
+  @media (min-width: $width-tablet) {
     @include fonts(16px,24px);
     margin-bottom: 55px;
   }
 
-  @media(min-width: $width-desktop) {
+  @media (min-width: $width-desktop) {
     max-width: 436px;
     margin-bottom: 69px;
   }
@@ -101,8 +98,7 @@
   @media (min-width: $width-desktop) {
     grid-template-columns: 162px 162px;
     margin-bottom: 0;
-    column-gap: 42px;
-    row-gap: 55px;
+    gap: 55px 42px;
   }
 }
 
@@ -113,7 +109,7 @@
   padding: 0 15px;
   max-width: 58px;
 
-  @media (min-width: $width-tablet){
+  @media (min-width: $width-tablet) {
     @include fonts(14px,14px);
     max-width: 100%;
   }
@@ -140,22 +136,19 @@
   font-family: $font-secondary;
   text-align: center;
   text-transform: uppercase;
-  grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column: 1 / 3;
 
   @media (min-width: $width-tablet) {
     @include fonts(20px,20px);
     padding-top: 11px;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column: 3 / 4;
     max-width: 174px;
     text-align: right;
     margin-left: auto;
   }
 
   @media (min-width: $width-desktop) {
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column: 1 / 3;
     max-width: none;
     text-align: left;
     margin-left: 0;

@@ -29,11 +29,10 @@
 
   @media (min-width: $width-tablet) {
     grid-template-columns: repeat(auto-fit, 245px);
-    column-gap: 138px;
-    row-gap: 77px;
+    gap: 77px 138px;
   }
 
-  @media(min-width: $width-desktop) {
+  @media (min-width: $width-desktop) {
     gap: 79px;
   }
 }
@@ -52,7 +51,7 @@
 
   @media (min-width: $width-desktop) {
     width: $width-desktop-content;
-    padding: 0 110px 0;
+    padding: 0 110px;
     border: none;
     margin-bottom: 69px;
   }
@@ -62,7 +61,7 @@
   padding: 2px 0 4px 80px;
 
   @media (min-width: $width-tablet) {
-    padding: 111px 0 57px 0;
+    padding: 111px 0 57px;
     background-size: 80px 80px;
   }
 }
@@ -84,7 +83,7 @@ $advantages__item-count: 4;
     @media (min-width: 768px) {
       @include background-image(url("../../images/background/advantages/advantages-background-tablet-#{$i}@1x.jpg"), no-repeat, 80px 80px);
 
-      @media(min-resolution: 2dppx) {
+      @media (min-resolution: 2dppx) {
         @include background-image(url("../../images/background/advantages/advantages-background-tablet-#{$i}@2x.jpg"), no-repeat, 80px 80px);
       }
     }
