@@ -45,12 +45,26 @@
 }
 
 .contacts__map-wrapper {
-  @include background-image (url("../../images/background-map-save.jpg"), no-repeat, cover);
+  @include background-image (url("../../images/background/save-map-background/save-map-mobile@1x.jpg"), no-repeat, contain);
+  background-position: center 0;
   height: 362px;
   width: 100%;
 
+  @media (min-resolution: 2dppx) {
+    @include background-image (url("../../images/background/save-map-background/save-map-mobile@2x.jpg"), no-repeat, contain);
+  }
+
   @media (min-width: $width-tablet) {
+    @include background-image (url("../../images/background/save-map-background/save-map-tablet@1x.jpg"), no-repeat, contain);
     height: 400px;
+
+    @media (min-resolution: 2dppx) {
+      @include background-image (url("../../images/background/save-map-background/save-map-tablet@2x.jpg"), no-repeat, contain);
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    @include background-image (url("../../images/background/save-map-background/save-map-desktop@1x.jpg"), no-repeat, contain);
   }
 }
 
