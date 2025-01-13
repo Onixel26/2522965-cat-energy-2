@@ -1,13 +1,14 @@
+/*
 .review {
   background: $background-color-secondary;
 
   @media (min-width: $width-tablet) {
     background: $basic-white;
-    position: relative; /* родитель для бэкграунд цвета */
+    position: relative; /* родитель для бэкграунд цвета
     z-index: -1;
 
     &::after {
-      content: "";  /* бэкграунд второй цвет */
+      content: "";  /* бэкграунд второй цвет
       position: absolute;
       left: 0;
       bottom: 0;
@@ -32,7 +33,7 @@
   @media (min-width: $width-desktop) {
     width: $width-desktop-content;
     padding: 0 0 75px;
-    position: relative; /* Для позиционирования слайдера */
+    position: relative; /* Для позиционирования слайдера
   }
 }
 
@@ -127,7 +128,7 @@
 .review__results,
 .review__results-description,
 .review__results-title {
-  transform: rotate(180deg);      /* Делаю тег ледженд снизу блока филдсета */
+  transform: rotate(180deg);      /* Делаю тег ледженд снизу блока филдсета
 }
 
 .review__amount {
@@ -160,3 +161,6 @@
     margin-left: 63px;
   }
 }
+
+
+*/
