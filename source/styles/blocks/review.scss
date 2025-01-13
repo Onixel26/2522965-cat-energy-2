@@ -164,3 +164,68 @@
 
 
 */
+
+.review {
+  background-color: $background-color-secondary;
+}
+
+.review-container {
+  width: $width-mobile-content;
+  margin: 0 auto;
+}
+
+.review__title {
+  @include fonts(36px, 40px);
+  @include margin-text(40px);
+  font-family: $font-secondary;
+}
+
+.review__description {
+  @include fonts(14px,18px);
+  @include margin-text(20px);
+  color: $base-color-text;
+}
+
+.review__results-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+}
+
+.review__results,
+.review__results-description,
+.review__results-title {
+  transform: rotate(180deg);      /* Делаю тег ледженд снизу блока филдсета */
+}
+
+.review__results {
+  border: 1px solid $border-third;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.review__results-description {
+  @include fonts(24px,24px);
+  @include margin-text(0);
+  font-family: $font-secondary;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.review__results-title {
+  @include fonts(12px,12px);
+  @include margin-text(0);
+  color: $base-color-text;
+  text-align: center;
+  padding: 0 15px;
+  max-width: 87px;
+}
+
+.review__amount {
+  @include fonts(14px,20px);
+  @include margin-text(0);
+  font-family: $font-secondary;
+  grid-column: 1 / 3;
+  text-align: center;
+  text-transform: uppercase;
+}
