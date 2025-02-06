@@ -46,13 +46,28 @@
     width: $width-tablet-content;
     padding-bottom:47px;
     margin-bottom: 45px;
-    border-bottom: 1px solid $border-primary;
+    position: relative;
+    
+    &::after {        /*потом внимание сюда, потенциально нужны коррективы */
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -50%;
+      width: 200%;
+      height: 1px;
+      background-color: $border-primary;
+    }
   }
 
   @media (min-width: $width-desktop) {
     width: $width-desktop-content;
     border: none;
     margin-bottom: 69px;
+
+    &::after {
+      height: 0;
+      width: 0;
+    }
   }
 }
 
