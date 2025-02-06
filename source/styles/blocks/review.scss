@@ -195,10 +195,12 @@
 .review-container {
   width: $width-mobile-content;
   margin: 0 auto;
+  padding-top: 25px;
   padding-bottom: 316px;
 
   @media (min-width: $width-tablet) {
     width: $width-tablet-content;
+    padding-top: 0;
     padding-bottom: 712px;
   }
 
