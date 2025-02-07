@@ -67,6 +67,7 @@
   }
 
   @media (min-width: $width-desktop) {
+    @include fonts(40px,40px);
     grid-column: 1 / 3;
   }
 }
