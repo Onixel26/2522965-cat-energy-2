@@ -44,13 +44,13 @@
 
   @media (min-width: $width-tablet) {
     width: $width-tablet-content;
-    padding-bottom:47px;
+    padding-bottom: 47px;
     margin-bottom: 45px;
     position: relative;
-    
-    &::after {        /*потом внимание сюда, потенциально нужны коррективы */
+
+    &::after {
       content: "";
-      position: absolute;
+      position: absolute;/* потом внимание сюда, потенциально нужны коррективы */
       bottom: 0;
       left: -50%;
       width: 200%;
@@ -79,8 +79,7 @@
     background-size: 80px 80px;
     counter-increment: blockNum;
     position: relative;
-  
-    /*бэкграунд счетчик списка */
+    /* бэкграунд счетчик списка */
     &::after {
       @include fonts(280px,280px);
       content: counter(blockNum);
@@ -89,7 +88,7 @@
       position: absolute;
       display: inline-block;
       right: 0;
-      bottom:0;
+      bottom: 0;
       z-index: -1;
     }
   }

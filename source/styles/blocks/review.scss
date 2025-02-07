@@ -167,7 +167,7 @@
 
 .review {
   background-color: $background-color-secondary;
-  
+
   @media (min-width: $width-tablet) {
     background-color: $basic-white;
     position: relative;
@@ -253,8 +253,7 @@
 
   @media (min-width: $width-desktop) {
     grid-template-columns: 162px 162px;
-    column-gap: 42px;
-    row-gap: 55px;
+    gap: 55px 42px;
   }
 }
 
@@ -309,7 +308,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  @media(min-width: $width-tablet) {
+  @media (min-width: $width-tablet) {
     @include fonts(20px,29px);
     grid-column: 3 / 4;
     text-align: right;
