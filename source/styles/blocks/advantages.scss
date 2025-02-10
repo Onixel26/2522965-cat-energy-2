@@ -52,10 +52,11 @@
       content: "";
       position: absolute;/* потом внимание сюда, потенциально нужны коррективы */
       bottom: 0;
-      left: -50%;
-      width: 200%;
+      right: 0;
+      width: 100vw;
       height: 1px;
       background-color: $border-primary;
+      box-shadow: 100vh 0 0 0 $border-primary;
     }
   }
 

@@ -76,14 +76,14 @@
 
 .line-shadow-title {
   width: fit-content;
-  background: $basic-white;
+  background-color: $basic-white;
   position: relative;
   box-shadow: -40px 0 0 0 $basic-white, 40px 0 0 0 $basic-white;
 
   &::after {
     content: "";
     position: absolute;
-    top: calc(50% - 1px);
+    top: 50%;
     right: 0;
     width: 100vw;
     height: 2px;
