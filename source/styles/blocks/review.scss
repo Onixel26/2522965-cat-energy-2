@@ -122,7 +122,7 @@
 
 .review__results-description {
   @include fonts(24px,24px);
-  margin: 7px 0 15px 0;
+  margin: 7px 0 15px;
   font-family: $font-secondary;
   text-align: center;
   text-transform: uppercase;

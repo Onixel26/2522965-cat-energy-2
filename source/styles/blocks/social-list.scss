@@ -14,7 +14,7 @@
   }
 }
 
-.social-list__logo {
+.social-list-wrapper__logo {
   margin-bottom: 20px;
   cursor: pointer;
   transition: 0.2s;
@@ -48,15 +48,8 @@
     margin-bottom: 0;
     border: none;
     padding: 0;
-    padding-left: 40px; /* центрирую иконки по макету в центр */
+    padding-left: 40px;
   }
-}
-
-
-.social-list__item-button {
-  display: block;
-  width: 28px;
-  height: 20px;
 }
 
 .social-list__item-tg,
@@ -72,4 +65,10 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.social-list__item-button {
+  display: block;
+  width: 28px;
+  height: 20px;
 }
