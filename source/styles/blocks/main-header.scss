@@ -29,6 +29,7 @@
 }
 
 .main-header__logo {
+
   @media (min-width: $width-tablet) {
     margin-right: 13px;
   }
@@ -36,6 +37,10 @@
   @media (min-width: $width-desktop) {
     margin-right: 14px;
   }
+}
+
+.main-header__logo-text {
+  margin-right: 10px;
 }
 
 .main-header--catalog {

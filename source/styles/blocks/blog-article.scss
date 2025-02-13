@@ -10,8 +10,8 @@
 }
 
 .blog-article__description {
-  @include fonts(16px,24px);
-  @include margin-text(15px);
+  @include fonts(14px,18px);
+  @include margin-text(17px);
   color: $base-color-text;
   padding-bottom: 23px;
   border-bottom: 1px solid $border-secondary;
