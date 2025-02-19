@@ -7,7 +7,7 @@
 
   @media (min-width: $width-tablet) {
     grid-template-columns: 163px 163px;
-    padding: 61px 70px;
+    padding: 60px 70px;
   }
 
   @media (min-width: $width-desktop) {
@@ -73,6 +73,10 @@
 
 .contacts-wrapper--catalog {
   background-color: $background-color-primary;
+
+  @media (min-width: $width-desktop) {
+    background-color: $basic-white;
+  }
 }
 
 .contacts {
@@ -89,5 +93,21 @@
 
   @media (min-width: $width-tablet) {
     display: block;
+  }
+}
+
+.contacts__description__space--catalog {
+  display: none;
+  width: 10px;
+  height: 20px;
+  background-color: white;
+
+  @media (min-width: $width-tablet) {
+    display: block;
+    background-color: $background-color-primary;
+  }
+
+  @media (min-width: $width-desktop) {
+    background-color: $basic-white;
   }
 }
