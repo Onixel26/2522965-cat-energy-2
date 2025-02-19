@@ -104,13 +104,13 @@
 .main-nav__list {
   @include reset-list;
   display: flex;
-  flex-direction: column; 
-  transition: 0.5s;
+  flex-direction: column;
   position: absolute;
   right: 0;
   top: 65px;
   width: 100%;
   z-index: 5;
+  transition: 0.5s;
   transform: scale(1, 0);
   transform-origin: top center;
 
@@ -118,12 +118,8 @@
     position: static;
     top: 0;
     transform: scale(1, 1);
-    flex-direction: row;
     gap: 33px;
-    flex-wrap: wrap;
-  }
-
-  @media (min-width: $width-desktop) {
+    flex-flow: wrap;
   }
 }
 
@@ -132,7 +128,7 @@
   text-align: center;
   transition: 0.2s;
   width: 100%;
-  
+
   @media (max-width: $width-pre-tablet) {
     &:hover {
       background-color: $border-primary;
@@ -145,7 +141,7 @@
     &:hover {
       opacity: 0.6;
     }
-  
+
     &:active {
       opacity: 0.3;
     }

@@ -85,22 +85,22 @@
   }
 }
 
-.contacts__description__space {
+.contacts__description-space {
   display: none;
   width: 10px;
   height: 20px;
-  background-color: white;
+  background-color: $basic-white;
 
   @media (min-width: $width-tablet) {
     display: block;
   }
 }
 
-.contacts__description__space--catalog {
+.contacts__description-space--catalog {
   display: none;
   width: 10px;
   height: 20px;
-  background-color: white;
+  background-color: $basic-white;
 
   @media (min-width: $width-tablet) {
     display: block;
