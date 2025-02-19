@@ -41,6 +41,10 @@
     @include fonts(16px,20px);
     text-align: right;
   }
+
+  @media (min-width: $width-desktop) {
+    text-align: left;
+  }
 }
 
 .contacts__map-wrapper {
@@ -74,5 +78,16 @@
 .contacts {
   @media (min-width: $width-desktop) {
     position: relative; /* создаю родителя для позиционирования адреса на самой карте */
+  }
+}
+
+.contacts__description__space {
+  display: none;
+  width: 10px;
+  height: 20px;
+  background-color: white;
+
+  @media (min-width: $width-tablet) {
+    display: block;
   }
 }
